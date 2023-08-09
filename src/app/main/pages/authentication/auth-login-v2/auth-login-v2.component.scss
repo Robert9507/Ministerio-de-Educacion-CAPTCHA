@@ -1,0 +1,48 @@
+@import '@core/scss/base/bootstrap-extended/include'; // Bootstrap includes
+@import '@core/scss/base/pages/page-auth.scss';
+
+//  Para el icono refresh
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+// <i class="fa-solid fa-rotate-right"> esto va en el HTML "boton de refresh"
+// <i class="fa-solid fa-volume-up"> esto va en el HTML "boton de volumen" 
+
+.auth-help-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+// Estilos para el captcha
+.captcha {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #F5F5F5;
+  border-radius: 0.5rem;
+
+  // Evitar seleccionar de texto del captcha
+  user-select: none;
+  cursor: not-allowed;
+
+  .captcha-text {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span {
+      padding: 5px;
+      font-size: 24px;
+      /* Agrega un borde de 1 píxel de ancho y color negro al contorno de las letras */
+      text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+    }
+  }
+  button {
+    margin-left: 10px;
+  }
+}
+
+
